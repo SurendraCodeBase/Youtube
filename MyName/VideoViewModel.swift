@@ -24,9 +24,9 @@ class VideoViewModel: NSObject {
         }
     }
     
-   
-    func getVideoData(text: String) {
     
+    func getVideoData(text: String) {
+        
         let videoData = VideoData()
         videoData.fetchVideos(text: text, delegate: videoDelegate!)
     }
@@ -35,5 +35,5 @@ class VideoViewModel: NSObject {
         self.init()
         self.video = video
     }
-
+    
 }

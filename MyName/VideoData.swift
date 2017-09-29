@@ -36,7 +36,7 @@ class VideoData: NSObject {
                         let title = snippetDict["title"]
                         let thumbnail = ((snippetDict["thumbnails"] as! [String:AnyObject])["default"] as! [String:AnyObject])["url"]
                         let videoID = (item["id"] as! [String:AnyObject])["videoId"]
-                        let video = Video(title: title as! String, thumbnail: thumbnail as! String, videoID: videoID as! String)
+                        let video = Video(title: title as? String, thumbnail: thumbnail as? String, videoID: videoID as? String)
                         self.videos.append(video)
                     }
                     

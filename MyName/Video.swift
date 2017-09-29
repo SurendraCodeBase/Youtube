@@ -14,11 +14,11 @@ class Video: NSObject {
     var thumbnail: String
     var videoID: String
     
-    init(title: String, thumbnail: String, videoID: String) {
+    init(title: String?, thumbnail: String?, videoID: String?) {
         
-        self.title = title
-        self.thumbnail = thumbnail
-        self.videoID = videoID
+        self.title = title ?? ""
+        self.thumbnail = thumbnail ?? ""
+        self.videoID = videoID ?? ""
     }
 
 }
